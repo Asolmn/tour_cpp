@@ -1,6 +1,7 @@
-view/HelloWorld/build/CMakeFiles/*
-view/HelloWorld/build/cmake_install.cmake
-view/HelloWorld/build/CMakeCache.txt
 .vscode/settings.json
-view/HelloWorld/build/.cmake/*
-view/HelloWorld/build/compile_commands.json
+
+view/*/build/CMakeFiles
+view/*/build/cmake_install.cmake
+view/*/build/CMakeCache.txt
+view/*/build/.cmake
+view/*/build/compile_commands.json
