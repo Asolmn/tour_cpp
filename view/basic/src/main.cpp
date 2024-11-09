@@ -2,6 +2,7 @@
 #include <vector>
 #include "file.h"
 #include "func.h"
+#include "temp.h"
 
 using namespace std;
 
@@ -28,5 +29,9 @@ int main() {
     vector<int> vect = {8,34,3,13,1,21,5,2};
     BubbleSort(vect);
 
-    DisPlayer(vect);
+    // DisPlayer(vect);
+    vector<string> svec;
+    string msg;
+    DisMessage(msg, svec);
+
 }
