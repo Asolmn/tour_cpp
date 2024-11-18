@@ -5,4 +5,4 @@ view/*/build/cmake_install.cmake
 view/*/build/CMakeCache.txt
 view/*/build/.cmake
 view/*/build/compile_commands.json
-view/*/build/.cache
+view/basic/.cache/
