@@ -1,8 +1,13 @@
 #include <iostream>
+#include <string>
 #include <vector>
+#include <map>
+#include <set>
+
 #include "file.h"
 #include "func.h"
 #include "temp.h"
+#include "objectbase.h"
 
 using namespace std;
 
@@ -33,5 +38,41 @@ int main() {
     vector<string> svec;
     string msg;
     DisMessage(msg, svec);
+
+
+    // Map
+    map<string, int> words;
+    words["vermeer"]  =1;
+
+    for (auto it = words.begin(); it != words.end(); ++it) {
+        cout << "key: " << it->first << " values: " << it->second << endl;
+    }
+
+    // map查询, find方法,返回的是一个iterator
+    auto key = words.find("vermeer");
+    cout << "key:" << key->first << endl;
+
+    // Set
+    string tWord;
+    set<string> wordExclus;
+
+    if (!wordExclus.count(tWord)) {
+        words[tWord]++;
+    }
+
+    // set insert
+    wordExclus.insert("filter");
+
+    // set insert vector
+    vector<string> setWords = {"set1"};
+
+    wordExclus.insert(setWords.begin(), setWords.end());
+
+    // 迭代
+    for (auto it = wordExclus.begin(); it != wordExclus.end(); ++it) {
+        cout << *it << " ";
+    }
+    cout << endl;
+
 
 }

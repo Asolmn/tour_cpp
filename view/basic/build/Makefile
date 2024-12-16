@@ -177,6 +177,30 @@ src/func.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/func.cpp.s
 .PHONY : src/func.cpp.s
 
+src/generic.o: src/generic.cpp.o
+.PHONY : src/generic.o
+
+# target to build an object file
+src/generic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/generic.cpp.o
+.PHONY : src/generic.cpp.o
+
+src/generic.i: src/generic.cpp.i
+.PHONY : src/generic.i
+
+# target to preprocess a source file
+src/generic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/generic.cpp.i
+.PHONY : src/generic.cpp.i
+
+src/generic.s: src/generic.cpp.s
+.PHONY : src/generic.s
+
+# target to generate assembly for a file
+src/generic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/generic.cpp.s
+.PHONY : src/generic.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -201,6 +225,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/objectbase.o: src/objectbase.cpp.o
+.PHONY : src/objectbase.o
+
+# target to build an object file
+src/objectbase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/objectbase.cpp.o
+.PHONY : src/objectbase.cpp.o
+
+src/objectbase.i: src/objectbase.cpp.i
+.PHONY : src/objectbase.i
+
+# target to preprocess a source file
+src/objectbase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/objectbase.cpp.i
+.PHONY : src/objectbase.cpp.i
+
+src/objectbase.s: src/objectbase.cpp.s
+.PHONY : src/objectbase.s
+
+# target to generate assembly for a file
+src/objectbase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/src/objectbase.cpp.s
+.PHONY : src/objectbase.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,9 +264,15 @@ help:
 	@echo "... src/func.o"
 	@echo "... src/func.i"
 	@echo "... src/func.s"
+	@echo "... src/generic.o"
+	@echo "... src/generic.i"
+	@echo "... src/generic.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/objectbase.o"
+	@echo "... src/objectbase.i"
+	@echo "... src/objectbase.s"
 .PHONY : help
 
 
