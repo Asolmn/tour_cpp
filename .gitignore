@@ -1,8 +1,8 @@
 .vscode/settings.json
 
-view/*/build/CMakeFiles
-view/*/build/cmake_install.cmake
-view/*/build/CMakeCache.txt
-view/*/build/.cmake
-view/*/build/compile_commands.json
-view/basic/.cache/
+
+build/CMakeFiles
+build/cmake_install.cmake
+build/CMakeCache.txt
+build/.cmake
+build/compile_commands.json
